@@ -3,10 +3,12 @@ import sys
 
 
 def main():
-    if len(sys.argv) < 1:
+    if len(sys.argv) <= 1:
         print("Usage: python3 main.py <path_to_book>")
-    path = sys.argv[1]
-    text = open_file(path)
+        return
+    book_path = sys.argv[1]
+    text = open_file(book_path)
+    print(f"--- Begin report of {book_path} ---")
     print_report(text)
 
 
@@ -20,7 +22,7 @@ def print_report(text):
             continue
         count = char["count"]
         print(f"{character}: {count}")
-    print("--------- End ----------")
+    print("--- End report ---")
 
 
 def sort_on(dict):
