@@ -1,5 +1,7 @@
 # Bookbot
 
+> Brought to you thanks to [boot.dev](https://www.boot.dev/)
+
 This program prints a _report_ of a text, said report includes:
 - Number of words inside the text.
 - The number of times each independent character appears in the text.
@@ -18,7 +20,7 @@ git clone https://github.com/MoXcz/bookbot.git --depth 1
 
 After that just run the program using the python interpreter:
 
-```python
-python3 main.py
+```sh
+main.sh <path_to_book>
 ```
 
