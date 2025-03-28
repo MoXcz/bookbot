@@ -18,7 +18,7 @@ git clone https://github.com/MoXcz/bookbot.git --depth 1
 
 After that just run the program using the python interpreter:
 
-```python
-python3 main.py
+```sh
+main.sh <path_to_book>
 ```
 
